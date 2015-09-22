@@ -14,7 +14,7 @@ namespace eRestaurantSystem.DAL
     //this class should be restricted to access by ONLY the BLL methods. This class should not be accessable outside the component library
     internal class eResaurantContext : DbContext
     {
-        public eResaurantContext() : base ("name=EatIne")
+        public eResaurantContext() : base ("name=EatIn")
         {
             //constructor is used to pass webs config 
         }
