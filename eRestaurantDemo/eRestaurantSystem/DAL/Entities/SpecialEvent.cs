@@ -9,23 +9,26 @@ using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 #endregion
 
-namespace eRestaurantSystem.Entities
+namespace eRestaurantSystem.DAL.Entities
 {
     public class SpecialEvent
     {
         [Key]
         [Required(ErrorMessage="An Event Code is required (only one character)")]
-        [StringLength(1, ErrorMessage="Event Code can only use a single character code.")]
+        [StringLength(1,ErrorMessage="Event Code is only one character in lenght")]
         public string EventCode { get; set; }
-        [Required(ErrorMessage="A Description is required (5-30 characters)")]
-        [StringLength(30, MinimumLength=5, ErrorMessage="Description must be 5-30 characters long.")]
+        [Required(ErrorMessage = "Description is a required field.")]
+        [StringLength(30, ErrorMessage = "Description has a maximum length of 30 characters.")]
         public string Description { get; set; }
+
         public bool Active { get; set; }
 
-        //Navigation virtual property(s)
+        //Navigational virtual properties
+        //this is a parent to the Reservation entity
         public virtual ICollection<Reservation> Reservations { get; set; }
 
-        //all classes can have their own constructor. Constructors can contain initialization values.
+
+        //default values can be set in the class constructor
         public SpecialEvent()
         {
             Active = true;
