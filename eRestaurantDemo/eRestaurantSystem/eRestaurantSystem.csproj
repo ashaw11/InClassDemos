@@ -49,14 +49,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\AdminController.cs" />
+<<<<<<< HEAD
     <Compile Include="BusinessRuleException.cs" />
+=======
+>>>>>>> 62f508848d13d9701ec6c79bd8553e27bba3d60d
     <Compile Include="DAL\DTOs\MenuCategoryItems.cs" />
     <Compile Include="DAL\DTOs\ReservationsByDate.cs" />
     <Compile Include="DAL\Entities\Bill.cs" />
     <Compile Include="DAL\Entities\BillItem.cs" />
+<<<<<<< HEAD
     <Compile Include="DAL\Entities\Item.cs" />
     <Compile Include="DAL\Entities\MenuCategory.cs" />
     <Compile Include="DAL\Entities\Reservation.cs" />
+=======
+    <Compile Include="DAL\Entities\Employees.cs" />
+    <Compile Include="DAL\Entities\EmployeeSkills.cs" />
+    <Compile Include="DAL\Entities\Item.cs" />
+    <Compile Include="DAL\Entities\Locations.cs" />
+    <Compile Include="DAL\Entities\MenuCategory.cs" />
+    <Compile Include="DAL\Entities\PlacementContracts.cs" />
+    <Compile Include="DAL\Entities\Reservation.cs" />
+    <Compile Include="DAL\Entities\Schedules.cs" />
+    <Compile Include="DAL\Entities\Shifts.cs" />
+    <Compile Include="DAL\Entities\Skills.cs" />
+>>>>>>> 62f508848d13d9701ec6c79bd8553e27bba3d60d
     <Compile Include="DAL\Entities\SpecialEvent.cs" />
     <Compile Include="DAL\Entities\Table.cs" />
     <Compile Include="DAL\Entities\Waiter.cs" />
