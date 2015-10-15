@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class UserControls_MesasgeUserControl : System.Web.UI.UserControl
+public partial class ComandPages_WaiterAdmin : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
