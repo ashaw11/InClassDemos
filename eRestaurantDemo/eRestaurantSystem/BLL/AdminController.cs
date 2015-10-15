@@ -18,12 +18,9 @@ namespace eRestaurantSystem.BLL
     [DataObject]
     public class AdminController
     {
-<<<<<<< HEAD
 
         #region Queries
 
-=======
->>>>>>> 62f508848d13d9701ec6c79bd8553e27bba3d60d
         [DataObjectMethod(DataObjectMethodType.Select,false)]
         public List<SpecialEvent> SpecialEvents_List()
         {
@@ -119,7 +116,6 @@ namespace eRestaurantSystem.BLL
                 return results.ToList();
             }
         }
-<<<<<<< HEAD
 
       
 
@@ -169,13 +165,11 @@ namespace eRestaurantSystem.BLL
             }
         }
         #endregion
+
+        //waiter
+
+
     }//eof class
 }//eof namespace
 
-=======
-      
-
-    }
-}
->>>>>>> 62f508848d13d9701ec6c79bd8553e27bba3d60d
 

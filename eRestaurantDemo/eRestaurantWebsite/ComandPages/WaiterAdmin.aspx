@@ -7,6 +7,8 @@
     <h1>Waiter Admin<h1>
     <uc1:MessageUserControl ID="MessageUserControl1" runat="server" />
 
+        <h1>
+
         <asp:Label ID="Label1" runat="server" Text="Select Waiter for Update"></asp:Label>
         <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
         <asp:LinkButton ID="FetchWaiter" runat="server">Fetch Waiter</asp:LinkButton>

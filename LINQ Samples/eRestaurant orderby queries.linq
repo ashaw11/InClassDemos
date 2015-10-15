@@ -1,6 +1,6 @@
 <Query Kind="Expression">
   <Connection>
-    <ID>1f6a4b30-57f4-4825-8a8c-b4e5c6c67b27</ID>
+    <ID>f9522ad4-fcde-4c85-a404-6d19e327e600</ID>
     <Persist>true</Persist>
     <Server>.</Server>
     <Database>eRestaurant</Database>
@@ -9,24 +9,24 @@
 
 //orderby
 
-//default is ascending
+//default ascending
 from food in Items
 orderby food.Description
 select food
 
-//also available descending
+//default descending
 from food in Items
 orderby food.CurrentPrice descending
 select food
 
-//can use both ascending and  descending
+//default descending ascending
 from food in Items
 orderby food.CurrentPrice descending, food.Calories ascending
 select food
 
-//you can use where and orderby together
+//default ascending with where clause
+//default ascending
 from food in Items
 where food.MenuCategory.Description.Equals("Entree")
-orderby food.CurrentPrice descending, food.Calories ascending
-
+orderby food.Description
 select food
